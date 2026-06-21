@@ -106,7 +106,7 @@ ol {
   font-family: "Fira Sans Condensed", sans-serif;
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 23px;
 }
 
 .search-form__textfield::placeholder {
@@ -114,7 +114,6 @@ ol {
 }
 
 .search-form__fieldset {
-  min-width: 225px;
   border: none;
   font-weight: 400;
   font-size: 18px;
@@ -125,7 +124,7 @@ ol {
 .search-form__fieldset-title {
   font-weight: 400;
   font-size: 18px;
-  line-height: 100%;
+  line-height: 22px;
   letter-spacing: 0%;
   margin-bottom: 5px;
 }
@@ -188,7 +187,8 @@ ol {
 }
 
 .more-button {
-  width: 100%;
+  width: calc(100% - 4px);
+  margin: 0 2px 2px;
 }
 
 .content__list-container {
@@ -197,7 +197,7 @@ ol {
   flex-direction: column;
   gap: 30px;
   height: 298px;
-  overflow-y: auto;
+  overflow-y: scroll;
 }
 
 .content__details {
@@ -207,9 +207,8 @@ ol {
 
 .title {
   font-weight: 700;
-  font-style: Bold;
   font-size: 75px;
-  line-height: 94%;
+  line-height: 70px;
   letter-spacing: 0%;
   text-transform: uppercase;
   font-family: "Oswald", sans-serif;
@@ -222,7 +221,8 @@ ol {
 
 .result__video-container {
   position: relative;
-  min-width: 711px;
+  width: 711px;
+  height: 386px;
   margin-bottom: 16px;
 }
 
@@ -230,6 +230,7 @@ ol {
   width: 100%;
   height: 100%;
   object-fit: cover;
+  object-position: center;
 }
 
 .content__list {
@@ -289,7 +290,6 @@ ol {
 .content__video-card-title {
   font-family: "Oswald", sans-serif;
   font-weight: 700;
-  font-style: Bold;
   font-size: 30px;
   line-height: 100%;
   letter-spacing: 0%;
@@ -297,6 +297,9 @@ ol {
   white-space: nowrap;
   overflow: hidden;
   text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  max-width: 192px;
   margin-bottom: 6px;
 }
 
